@@ -13,10 +13,10 @@
     <div id="container">
         <div id="info-container">
             <div id="img"><img src="images/dom-casmurro.jpeg" alt="capa do livro"></div>
-            <p>Capitulo 01</p>
+            <p id="capitulo-text">Capitulo 1</p>
             <p>Machado de Assis</p>
         </div>
-        <audio id="audio-capitulo" src="books/dom-casmurro/1.mp3"></audio>
+        <audio id="audio-capitulo" src="./books/dom-casmurro/1.mp3"></audio>
         <div class="buttons-container">
             <button class="button" id="skip-start">
                 <i class="bi bi-skip-backward"
@@ -28,13 +28,14 @@
 
             <button class="button" id="play-pause">
                 <i class="bi bi-play-circle" 
-                id="play"
-                onmouseover="changeClass( 'play', 'bi-play-circle', 'bi-play-circle-fill')"
-                onmouseout="changeClass('play', 'bi-play-circle-fill', 'bi-play-circle')"></i>
+                    id="play"
+                    onmouseover="changePlayClass(true)"
+                    onmouseout="changePlayClass(false)">
+                </i>
                 </i>
             </button>
 
-            <button class="button" id="-skip-end">
+            <button class="button" id="skip-end">
                 <i class="bi bi-skip-forward" 
                 id="forward" 
                 onmouseover="changeClass( 'forward', 'bi-skip-forward', 'bi-skip-forward-fill')"

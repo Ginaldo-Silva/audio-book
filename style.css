@@ -67,7 +67,7 @@ p {
 }
 
 ::-webkit-progress-value {
-    background-color: green;
+    background-color: white;
 }
 
 ::-webkit-progress-bar, ::-moz-progress-bar, ::-ms-fill {
